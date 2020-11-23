@@ -1,0 +1,12 @@
+<h1><%= @artist.name %></h1><br>
+<h3><%= @artist.title %></h3><br>
+<h3><%= @artist.age %></h3><br>
+
+<h2>Known Instruments:</h2>
+<ul>
+    <%= @artist.instruments.each do |i| %>
+        <li>
+        <%= "#{i.name} - #{i.classification}"%>
+        </li><br>
+    <% end %>
+</ul>
